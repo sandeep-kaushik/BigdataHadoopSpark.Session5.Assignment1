@@ -2,6 +2,10 @@ Assignment 5.1
 
 
 
+
+								Assignment 5.1
+
+
 a)
 emp_with_rating = LOAD '/home/acadgild/pig/employee_details.txt' USING PigStorage(',') AS (emp_id:int, emp_name:chararray, emp_salary:int, emp_rating:int);
 sorted_emp_with_rating = order emp_with_rating by emp_rating,emp_name;
@@ -57,6 +61,8 @@ output:
 (114,Madhuri)
 (105,Pawan
 
+
+
 d)
 emp = LOAD '/home/acadgild/pig/employee_details.txt' USING PigStorage(',') AS (emp_id:int, emp_name:chararray, emp_salary:int);
 emp_expenses = LOAD '/home/acadgild/pig/employee_expenses.txt' AS (emp_id:int, expenses:int);
@@ -76,13 +82,14 @@ dump emp_in_expense;
 output:
 
 
-
 (102,Shahrukh)
 (110,Priyanka)
 (104,Anubhav)
 (101,Amitabh)
 (114,Madhuri)
 (105,Pawan)
+
+
 
 
 e)
